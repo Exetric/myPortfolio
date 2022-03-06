@@ -189,3 +189,14 @@ hr {
   right: 0px;
   position: absolute;
 }
+
+.footertext {
+  color: #CCCCCC;
+  font-family: 'Poppins', sans-serif;
+  word-spacing: 2px;
+}
+
+.footertext>a {
+  font-size: 13px;
+  color: #3996dd;
+}

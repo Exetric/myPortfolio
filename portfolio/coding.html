@@ -39,7 +39,7 @@
         <h2>Grub Glide Gameboy Game</h2>
         <p>Grub Glide is a Gameboy game I created in C using the GBDK library. The game's ROM is available on my Github.</p>
 
-        <button type="button" name="Play Game" onclick="location.href = '../index.html'">Play</button>
+        <button type="button" name="Download" onclick="location.href = 'https://github.com/Exetric/GrubGlide/releases/tag/Release'">Download</button>
         <img src="../assets/code.svg" alt="source" name="View Source" class="source" onclick="location.href = 'https://github.com/Exetric/GrubGlide'">
       </div>
     </div>
@@ -107,7 +107,7 @@
         <h2>DVD Screensaver for Gameboy</h2>
         <p>Another Gameboy app that I created in C that plays a recreation of the DVD screensaver</p>
 
-        <button type="button" name="Open" onclick="location.href = '../index.html'">Open</button>
+        <button type="button" name="Download" onclick="location.href = 'https://github.com/Exetric/GameboyDVD/releases/tag/Release'">Download</button>
         <img src="../assets/code.svg" alt="source" name="View Source" class="source" onclick="location.href = 'https://github.com/Exetric/GameboyDVD'">
       </div>
     </div>
@@ -116,7 +116,19 @@
       <hr>
     </div>
 
+    <!-- Legal -->
+
+    <div class="footertext" style="text-align: center; padding: 0px 0px 64px 0px;">
+      <small id="copyright"></small>
+      <br>
+      <a href="#">BACK TO TOP</a>
+    </div>
+
   </div>
 </body>
+
+<script type="text/javascript">
+  document.getElementById('copyright').innerHTML = 'COPYRIGHT \xA9 ' + new Date().getFullYear() + ' ETHAN HAZEL'
+</script>
 
 </html>

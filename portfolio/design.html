@@ -9,6 +9,7 @@
   <link rel="icon" href="../assets/favicon/256.png" size="256x256" type="image/png">
   <title>Design Work - Ethan Hazel</title>
   <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="../css/gallery.css">
 </head>
 
 <body>
@@ -16,8 +17,49 @@
     <img onclick="location.href = '../index.html'" class="logo" draggable="false" src="../assets/logo.svg" alt="Logo">
   </div>
   <div class="main">
-    <h1>Design Work WIP</h1>
+
+    <!-- Heading -->
+
+    <div class="introduction">
+      <h1>Design Work</h1>
+      <p>I have around 6 years of experience in design, mainly with<br>programs such at Adobe Illustrator and Adobe Photoshop.<br>Some designs I have worked on in the past include T-Shirt<br>design, logos, and advertising design.</p>
+
+      <img id="headerphoto" src="../assets/lego.png" alt="TBD">
+    </div>
+
+    <div class="linePadding">
+      <hr>
+    </div>
+
+    <!-- Grub Glide -->
+
+    <div class="entry">
+      <img src="../assets/grubglide.png" alt="Programming">
+      <div class="container">
+        <h2>Advertising Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+
+        <button type="button" name="Download" onclick="location.href = '#'">View</button>
+      </div>
+    </div>
+
+    <div class="linePadding">
+      <hr>
+    </div>
+
+    <!-- Legal -->
+
+    <div class="footertext" style="text-align: center; padding: 0px 0px 64px 0px;">
+      <small id="copyright"></small>
+      <br>
+      <a href="#">BACK TO TOP</a>
+    </div>
+
   </div>
 </body>
+
+<script type="text/javascript">
+  document.getElementById('copyright').innerHTML = 'COPYRIGHT \xA9 ' + new Date().getFullYear() + ' ETHAN HAZEL'
+</script>
 
 </html>
