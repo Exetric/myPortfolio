@@ -76,6 +76,14 @@ h2 {
   z-index: 5;
 }
 
+h3 {
+  font-family: 'Poppins', sans-serif;
+  opacity: 75%;
+  font-weight: 600;
+  line-height: 25px;
+  z-index: 5;
+}
+
 p {
   font-family: 'Poppins', sans-serif;
   opacity: 50%;
@@ -199,4 +207,24 @@ hr {
 .footertext>a {
   font-size: 13px;
   color: #3996dd;
+}
+button {
+  border: none;
+  padding: 3px 24px 3px 24px;
+  color: white;
+  background-color: #0082E6;
+  border-radius: 999px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(0.9);
 }

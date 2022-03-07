@@ -14,32 +14,70 @@
 
 <body>
   <div class="header">
-    <img onclick="location.href = '../index.html'" class="logo" draggable="false" src="../assets/logo.svg" alt="Logo">
+    <img onclick="location.href = '../index.html'" class="logo" draggable="false" src="../assets/icons/logo.svg" alt="Logo">
   </div>
+
+  <!-- Slideshow Overlay -->
+
+  <div class="overlay" id="overlay">
+
+    <div class="overlayWindow">
+
+      <h3 id="overlayName">Title</h3>
+
+      <img id="overlayImg" src="../assets/test.png" alt="photo">
+
+      <img class="svgButton leftButton" src="../assets/icons/left.svg" alt="previous" onclick="prevSlide();">
+      <img class="svgButton rightButton" src="../assets/icons/right.svg" alt="previous" onclick="nextSlide();">
+
+      <img class="svgButton closeButton" src="../assets/icons/x.svg" alt="previous" onclick="closeOverlay();">
+      <img class="svgButton openButton" src="../assets/icons/link.svg" alt="previous" onclick="openImg();">
+
+      <div class="overlayCounter" id="counter"></div>
+    </div>
+
+  </div>
+
   <div class="main">
 
     <!-- Heading -->
 
     <div class="introduction">
       <h1>Design Work</h1>
-      <p>I have around 6 years of experience in design, mainly with<br>programs such at Adobe Illustrator and Adobe Photoshop.<br>Some designs I have worked on in the past include T-Shirt<br>design, logos, and advertising design.</p>
+      <p>I have around 6 years of experience in design, mainly<br>with programs such at Adobe Illustrator and Adobe<br>Photoshop. Some designs I have worked on in the past<br>include T-Shirt design, logos, and advertising design.</p>
 
-      <img id="headerphoto" src="../assets/lego.png" alt="TBD">
+      <img id="headerphoto" src="../assets/design.png" alt="legoApps">
     </div>
 
     <div class="linePadding">
       <hr>
     </div>
 
-    <!-- Grub Glide -->
+    <!-- Logos -->
 
     <div class="entry">
-      <img src="../assets/grubglide.png" alt="Programming">
+      <img src="../assets/logos.png" alt="Logo Design">
+      <div class="container">
+        <h2>Logos</h2>
+        <p>I have experience with creating logos, whether it be for my own projects, or logos for defunked companies.</p>
+
+        <button type="button" name="Download" onclick="loadSlideshow(logoSlides);">View</button>
+      </div>
+    </div>
+
+    <div class="linePadding">
+      <hr>
+    </div>
+
+    <!-- Advertising -->
+
+    <div class="entry">
+      <img src="../assets/advertising.png" alt="Advertising Design">
       <div class="container">
         <h2>Advertising Design</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <p>I have created advertisments in the past, some for fun using fake companies and others for real use.</p>
 
-        <button type="button" name="Download" onclick="location.href = '#'">View</button>
+        <button type="button" name="Download" onclick="loadSlideshow(advertisingSlides);">View</button>
       </div>
     </div>
 
@@ -61,5 +99,7 @@
 <script type="text/javascript">
   document.getElementById('copyright').innerHTML = 'COPYRIGHT \xA9 ' + new Date().getFullYear() + ' ETHAN HAZEL'
 </script>
+
+<script type="text/javascript" src="../scripts/overlay.js"></script>
 
 </html>

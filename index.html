@@ -13,7 +13,7 @@
 
 <body>
   <div class="header">
-    <img onclick="window.scrollTo(0,0);" class="logo" draggable="false" src="./assets/logo.svg" alt="Logo">
+    <img onclick="window.scrollTo(0,0);" class="logo" draggable="false" src="./assets/icons/logo.svg" alt="Logo">
   </div>
   <div class="main">
 
@@ -60,6 +60,8 @@
 
     <!-- UI & UX -->
 
+    <!--
+
     <div class="left" onclick="location.href = './portfolio/interface.html'">
       <img src="./assets/ux.png" alt="UI & UX">
       <div class="container">
@@ -67,6 +69,21 @@
         <p>I have experience creating mockups and putting together UI elements in HTML and other framworks. Some examples I have are redesigns of popular or defunked apps that I have remade in my own style.</p>
       </div>
     </div>
+
+    <div class="linePadding">
+      <hr>
+    </div>
+
+    -->
+
+    <center>
+
+    <h1>My Resume</h1>
+    <p>Download the PDF of my resume</p>
+
+    <button type="button" name="button" onclick="download('./files/resume.pdf', 'resume.pdf')">Download</button>
+
+    </center>
 
     <div class="linePadding">
       <hr>
@@ -84,7 +101,14 @@
 </body>
 
 <script type="text/javascript">
-  document.getElementById('copyright').innerHTML = 'COPYRIGHT \xA9 ' + new Date().getFullYear() + ' ETHAN HAZEL'
+  document.getElementById('copyright').innerHTML = 'COPYRIGHT \xA9 ' + new Date().getFullYear() + ' ETHAN HAZEL';
+
+  function download(fileUrl, fileName) {
+    var a = document.createElement("a");
+    a.href = fileUrl;
+    a.setAttribute("download", fileName);
+    a.click();
+  }
 </script>
 
 </html>
